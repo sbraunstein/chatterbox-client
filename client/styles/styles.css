@@ -82,3 +82,18 @@ form input[type=text] {
 .spinner img {
     padding: 10px;
 }
+
+.button {
+    background-color: blue;
+    width: 100px;
+    height: auto;
+    margin: 10px;
+    color: white;
+    padding: 10px;
+    border-radius: 25px;
+
+}
+
+.button:hover {
+ background-color: yellow;
+}
