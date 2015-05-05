@@ -1,22 +1,42 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>chatterbox</title>
-    <link rel="stylesheet" href="styles/styles.css">
+<head>
+  <meta charset="utf-8">
+  <title>chatterbox</title>
+  <link rel="stylesheet" href="styles/styles.css">
 
-    <!-- dependencies -->
-    <script src="bower_components/jquery/jquery.min.js"></script>
-    <script src="bower_components/underscore/underscore.min.js"></script>
-    <!-- your scripts -->
-    <script src="env/config.js"></script>
-    <script src="scripts/app.js"></script>
-  </head>
-  <body>
-    <div id="main">
-      <h1>chatterbox</h1>
-        <div id="chats">jgyjg</div>
-      <!-- Your HTML goes here! -->
-    </div>
-  </body>
+  <!-- dependencies -->
+  <script src="bower_components/jquery/jquery.min.js"></script>
+  <script src="bower_components/underscore/underscore-min.js"></script>
+  <!-- your scripts -->
+  <script src="env/config.js"></script>
+  <script src="scripts/app.js"></script>
+  <script type="text/javascript">$(app.init.bind(app))</script>
+</head>
+<body>
+  <div id="main">
+    <h1>chatterbox</h1>
+    <select id ="roomSelect"></select>
+    <input id="message" value="Send a message!!"></input>
+    <input id="addRoom" value="Add a Room!"></input>
+    <button id="roomButton">ADDDDD ROOOOM</button>
+    <button id="send">SENDDDDD</button>
+    <div id="chats"></div>
+  </div>
+</body>
+<script type="text/javascript">
+  $("#message").click(function() {
+    $("#message").val("")
+  })
+   $("#addRoom").click(function() {
+    $("#addRoom").val("")
+  })
+    $("#send").click(function() {
+    $("#message").val("")
+  })  
+    $("#roomButton").click(function(){
+      $('#  addRoom').val("")
+    })
+</script>
+
 </html>
